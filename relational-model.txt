@@ -20,3 +20,9 @@ FOREIGN KEY (Product_id) REFERENCES Product(Product_id),
 Quantity INT,
 Total_amount INT
 );
+
+ALTER TABLE Product
+ADD Category VARCHAR2(20);
+
+ALTER TABLE Orders
+ADD OrderDate DATE DEFAULT SYSDATE;
